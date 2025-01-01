@@ -69,6 +69,7 @@ function fetchProductData(productUrl) {
 
 // Function to extract ProductID from the product URL
 function extractProductID(productUrl) {
+    // Assuming ProductID can be extracted from the URL as a part of the product's link
     var productIDMatch = productUrl.match(/\/l\/([^/?]+)/);
     return productIDMatch ? productIDMatch[1] : null;
 }
